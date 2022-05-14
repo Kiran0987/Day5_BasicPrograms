@@ -1,24 +1,22 @@
 package com.bridgelabz.flip;
 
-import java.util.Scanner;
-
 public class FlipCoin {
 	public static void main(String[] args) {
-	
-		int loopCount = 1;
-		int numFlips=10;
-		double result;
-		int heads=0;
+		int num = 20;
+		int  head_cnt = 0, tail_cnt = 0;
+		double heads, tails;
 
-		while(loopCount < numFlips){
-		result=Math.random();
-		if(result<=.5){heads++;}
-		loopCount++;
+		for (int i = 0; i < num; i++) {
+			double random = Math.random();
+			if (random < 0.5)
+				tail_cnt++;
+			else
+				head_cnt++;
 		}
 
-		int percentHeads = heads/numFlips*100;
-		int tails = 0;
-		int percentTails = (numFlips-tails)/numFlips*100;
-		System.out.println(percentHeads);
+		heads = head_cnt / (double) num * 100;
+		tails = tail_cnt / (double) num * 100;
+		System.out.println("Percentage of heads: " + heads + "%");
+		System.out.println("Percentage of tails: " + tails + "%");
 	}
 }

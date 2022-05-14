@@ -1,13 +1,9 @@
 package com.bridgelab.leapyear;
 
-import java.util.Scanner;
-
 public class LeapYear {
 	public static void main(String[] args) {
 
-		System.out.println("Enter the  year  ");
-        Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        int num = 2020;
 		
 		if (((num % 4 == 0) && (num % 100 != 0)) || (num % 400 == 0))
 		{

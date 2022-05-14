@@ -1,12 +1,9 @@
 package com.bridgelabz.power;
 
-import java.util.Scanner;
-
 public class PowerofTwo {
 	public static void main(String[] args) {
-		System.out.println("Enter the  exponential value of 2 : ");
-		Scanner scanner = new Scanner(System.in);
-		int value = scanner.nextInt();
+		
+		int value = 5;
 		int exponent = 1;
 		if(value<31)
 		{
